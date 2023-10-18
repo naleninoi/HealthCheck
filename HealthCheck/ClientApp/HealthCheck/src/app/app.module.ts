@@ -7,12 +7,14 @@ import {HomeComponent} from "./home/home.component";
 import {NavMenuComponent} from "./nav-menu/nav-menu.component";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {HealthCheckComponent} from "./health-check/health-check.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    HealthCheckComponent
   ],
   imports: [
     BrowserModule,
