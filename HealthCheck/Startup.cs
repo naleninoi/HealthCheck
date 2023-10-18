@@ -39,7 +39,7 @@ public class Startup
         app.UseHttpsRedirection();
         app.UseStaticFiles(new StaticFileOptions()
         {
-            OnPrepareResponse = (context) =>
+            OnPrepareResponse = context =>
             {
                 // Retrieve cache configuration from appsettings.json
                 context.Context.Response.Headers["Cache-Control"] =
